@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
 import { NasaService } from './nasa.service';
-import { Apod } from './models/Apod';
 
 @Component({
   selector: 'app-root',
@@ -11,7 +10,7 @@ import { Apod } from './models/Apod';
 export class AppComponent implements OnInit {
   title = 'service_quest';
 
-  public imgOfTheDay!: Apod;
+  public imgOfTheDay: string = '';
 
   constructor (public nasaService: NasaService) {}
 
